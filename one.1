@@ -1,0 +1,160 @@
+# def calc(num1,num2):
+#     add=num1+num2
+#     return f"This is addition:{add}"
+# 
+# print(calc(10,11))
+#===================================================================
+# def calc(num1,num2,num3,num4): #positional argument
+#     add=num1-num2+num3+num4
+#     return print(f"This is subtract:{add}")
+#
+# calc(50,100,100,20)
+#==============================================================================================
+
+# def calc():
+#     num1=eval(input("Enter No# 1:"))
+#     num2=eval(input("Enter No# 2:"))
+#     select=input("what you want? \n1.Addition \n2.Subtraction \n3.Division \n4.Multiplication \n:")
+#     if select=="1":
+#         cal=num1+num2
+#     elif select=="2":
+#         cal=num1-num2
+#     elif select=="3":
+#         cal=num1/num2
+#     elif select=="4":
+#         cal=num1*num2
+#     else:
+#         cal="Wrong Input!"
+#     return print(cal)
+#        
+# 
+# 
+# calc()
+# 
+# ===================================================================================
+
+
+
+
+# def calc(num1,num2,num3,num4,num5):
+#     add=num1+num2+num3+num4+num5
+#     return print(f"This is addition:{add}")
+# 
+# calc(10,15,20,25,30)
+#===================================================================
+
+# def calc():
+#     num1=eval("Enter a number 1:")
+#     num2=eval("Enter a number 2:")
+#     select=input("What You Want To Do? \n1.subtraction \n2.addition \n3.divission \n4.multiplication ")
+#     if select=="1":
+#         cal=num1-num2
+#     elif select=="2":
+#         cal=num1+num2
+#     elif select=="3":
+#         cal=num1//num2
+#     elif select=="4":
+#         cal=num1*num2
+#     else:
+#         cal="wrong input"
+#     return print(cal)
+# 
+# 
+# calc()    
+#========================================================================================    
+#     
+# def calc():
+#     while True:
+#         num1=int(input("Enter number 1:"))
+#         num2=int(input("Enter number 2:"))
+#         opr=input("Enter operator: +,-,/,*==>>  ")
+#         if opr=="+":
+#             cal=num1+num2
+#             var="Addition"
+#         elif opr=="-":
+#             cal=num1-num2
+#             var="Subtraction"
+#         elif opr=="*":
+#             cal=num1*num2
+#             var="Multiplication"
+#         elif opr=="/":
+#             cal=num1/num2
+#             var="Divission"
+#             
+#         else:
+#             cal="Wrong Input"
+#         return print(f"This is {var} of {num1} and {num2} which is:{cal}")
+# 
+# 
+# calc()
+# ============================================================================================    
+    
+# def usd(pkr):
+#     pk=pkr+280
+#     return pk
+# def riyal(pkr):
+#     pk=pkr*74
+#     return pk
+# def euro(pkr):
+#     pk = pkr*330
+#     return pk
+# def dirham(pkr):
+#     pk = pkr*76
+#     return pk
+# 
+# print("="*25,"Currrency Exchange","="*25)
+# cur=eval(input("Enter the amount you have:"))
+# select=input("Which Currancy do you want to exchange with Pakistani rupee: \n1.usd \n2.riyal \n3.euro \n4.dirham ") 
+# 
+# if select=="1":
+#     #amt=usd(cur)
+#     print(f"Here is your converted amount in $ usd:{usd(cur)}")
+# elif select=="2":
+#     #amt=usd(cur)
+#     print(f"Here is your converted amount in RIYAL:{riyal(cur)}")
+# elif select=="3":
+#     #amt=usd(cur)
+#     print(f"Here is your converted amount in EURO:{euro(cur)}")
+# elif select=="4":
+#     #amt=usd(cur)
+#     print(f"Here is your converted amount in DIRHAM:{dirham(cur)}")
+# else:
+#     print("Wrong Input")
+#     print("Try Again")
+#========================================================================================================
+
+def fajar(time,salah):
+    print(f"{salah} Timings i.e {time} Offer Prayers!")
+def dhuhar(time,salah):
+    print(f"{salah} Timings i.e {time} Offer Prayers!")
+def asar(time,salah):
+    print(f"{salah} Timings i.e {time} Offer Prayers!")
+def maghrib(time,salah):
+    print(f"{salah} Timings i.e {time} Offer Prayers!")
+def isha(time,salah):
+    print(f"{salah} Timings i.e {time} Offer Prayers!")
+    
+time=int(input("Abi kia time hai bta? (0-24hrs): "))
+
+if time<=4:
+    salah="Dhuhar"
+    dhuhar(time,salah)
+elif time<=6:
+    salah="Asar"
+    asar(time,salah)
+elif time<=7:
+    salah="Maghrib"
+    maghrib(time,salah)
+elif time<=16:
+    salah="Isha"
+    isha(time,salah)
+elif time<=19:
+    salah="Fajar"
+    fajar(time,salah)
+else:
+    print("Invailid Time Zone Error")    
+    
+    
+    
+    
+    
